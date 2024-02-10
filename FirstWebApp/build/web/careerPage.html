@@ -1,0 +1,52 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                display:flex ;
+                justify-content: center ;
+                align-items: center ;
+                /*flex-direction: column ;*/
+            }
+            .main{
+                display:flex ;
+                justify-content: center ;
+                align-items: center ;
+                flex-direction: column ;
+            }
+            .input{
+                width:500px ;
+            }
+            .submit{
+                height: 30px ;
+                width: 50px ;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="SaveUserDataServlet" method="post" enctype="multipart/form-data">
+            <div class="input">
+                <p>Name :</p>
+                <input type="text" name="name" placeholder="Enter your name">
+            </div>
+            <div class="input">
+                <p>Email :</p>
+                <input type="email" name="email" placeholder="Enter mail">
+            </div>
+            <div class="input">
+                <p>Phone Number :</p>
+                <input type="tel" name="phone" placeholder="Enter mobile number">
+            </div><!-- comment -->
+            <div class="input">
+                <p>Attach your Resume :</p>
+                <input type="file" name="resume" >
+            </div>
+            
+            <input class="submit" type="submit" value="Submit">
+            <button><a href="uploadpic.html"> Upload Image</button>
+        </form>
+    </body>
+</html>
